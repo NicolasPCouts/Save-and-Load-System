@@ -9,7 +9,7 @@ namespace survivalPrototype
 {
 	public static class SavingManager 
 	{
-		public static string SavingPath = Application.persistentDataPath + "/Saves/";
+		public static string SavingPath;
 		
 		public static void SaveData<T>(T dataToSave, int Save) where T : SavebleObject
 		{
