@@ -54,7 +54,7 @@ public class PlayerData : SavebleObject
 
     public override string GetPrefabPath()
     {
-        return "Prefabs/FPSController";
+        return "Path of the prefab that you want to instantiate";
     }
 
     public override bool isInstantiatable()
