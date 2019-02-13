@@ -1,4 +1,4 @@
-# Save-System
+# Save and Load System
 A simple, but yet very powerful save system that i have made using C#/.NET and generics...
 I've made for using in games made with Unity, but with very few alterations you can use it for everything that you want.
 
