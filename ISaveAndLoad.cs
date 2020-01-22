@@ -1,11 +1,7 @@
 ﻿using System;
 
-namespace survivalPrototype
+public interface ISaveAndLoad
 {
-	public interface ISaveAndLoad
-	{
-		void Save(int indexToSave);
-		void Load(int indexToLoad);
-	}
+	void Save(int indexToSave);
+	void Load(int indexToLoad);
 }
-
