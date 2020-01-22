@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 [System.Serializable]
-public abstract class SavebleObject 
+public abstract class SaveableObject 
 {
 	public abstract bool isInstantiatable();
 

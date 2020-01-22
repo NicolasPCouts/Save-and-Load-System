@@ -10,7 +10,7 @@ To save the player's data you need to Create a class just for the data, like i d
 
 ### Are you using Unity?
 
-- IF YOU ARE using this save system for a Unity game, you must implement the ```GetPrefabPath()``` and ```IsInstantiable()``` methods, these are the methods that you will use to define if you want to Instantiate the Object when loading the game or not.
+- IF YOU ARE using this save system for a Unity game, you can implement the ```GetPrefabPath()``` and ```IsInstantiable()``` methods, these are the methods that you can use to define if you want to Instantiate the Object when loading the game or not.
 
 - IF YOU ARE NOT using this save system for a Unity game, you can just delete these methods from the **SaveableObject** class.
 

@@ -28,7 +28,7 @@ public class Player : ISaveAndLoad
 }
 
 [System.Serializable]
-public class PlayerData : SavebleObject
+public class PlayerData : SaveableObject
 {
     public static string key = "Player";
 
@@ -57,8 +57,9 @@ public class PlayerData : SavebleObject
         return "Path of the prefab that you want to instantiate";
     }
 
+    // use this function only if your using unity, you can use this function along if GetPrefabPath to Instantiate all entities that you want when you're loading the game
     public override bool isInstantiatable()
     {
-        return true;
+        return true; 
     }
 }

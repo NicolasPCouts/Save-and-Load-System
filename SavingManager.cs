@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -11,7 +10,7 @@ namespace survivalPrototype
 	{
 		public static string SavingPath;
 		
-		public static void SaveData<T>(T dataToSave, int Save) where T : SavebleObject
+		public static void SaveData<T>(T dataToSave, int Save) where T : SaveableObject
 		{
 			if (!Directory.Exists (SavingPath))
 				Directory.CreateDirectory (SavingPath);
@@ -25,7 +24,7 @@ namespace survivalPrototype
 			fs.Close ();
 		}
 		
-		public static T LoadData<T>(string key, int Save) where T : SavebleObject
+		public static T LoadData<T>(string key, int Save) where T : SaveableObject
 		{
 			string path = SavingPath + "Save" + Save.ToString() + "/" + key +".banana";
 			
@@ -69,7 +68,7 @@ namespace survivalPrototype
 				FileStream fs = new FileStream (dirs[i], FileMode.Open);
 				BinaryFormatter bf = new BinaryFormatter ();
 
-				SavebleObject saveObject = (SavebleObject)bf.Deserialize (fs);
+				SaveableObject saveObject = (SaveableObject)bf.Deserialize (fs);
 				fs.Close ();
 				if (saveObject.isInstantiatable()) 
 				{
