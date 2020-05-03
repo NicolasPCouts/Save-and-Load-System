@@ -4,7 +4,7 @@ I've made for using in games made with Unity, but with very few alterations you 
 
 ## How To Use:
 
-The **Player.cs** Class is an example of a file that you would want to save, the class must derive From the **ISaveAndLoad** interface and Inplement the Save and Load methods.
+The **Player.cs** Class is an example of a file that you would want to save, the class must derive From the **ISaveAndLoad** interface and Implement the Save and Load methods.
 
 To save the player's data you need to Create a class just for the data, like i did in the example file **Player.cs**.
 
